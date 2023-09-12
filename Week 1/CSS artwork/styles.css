@@ -1,0 +1,69 @@
+    
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #A9C482;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: 16px;
+        }
+        
+        .container {
+            position: relative;
+            width: 25rem; 
+            height: 25rem; 
+        }
+        
+        .circle {
+            position: absolute;
+            background-color: #2D696F;
+            border-radius: 50%;
+        }
+        
+        .center-circle {
+            background-color: #A9C482;
+            border-radius: 50%;
+            width: 12.5rem; 
+            height: 12.5rem;
+            top: 6.25rem; 
+            left: 6.25rem;
+            z-index: 1; 
+        }
+        
+        .top-circle {
+            width: 10rem; 
+            height: 10rem;
+            top: 1.25rem; 
+            left: 7.5rem; 
+        }
+        
+        .bottom-circle {
+            width: 10rem; 
+            height: 10rem; 
+            bottom: 1.25rem; 
+            left: 7.5rem; 
+        }
+        
+        .left-circle {
+            width: 10rem;
+            height: 10rem;
+            top: 7.5rem; 
+            left: 1.25rem;
+        }
+        
+        .right-circle {
+            width: 10rem; 
+            height: 10rem; 
+            top: 7.5rem; 
+            right: 1.25rem; 
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                zoom: 0.64; /* Scale the container down to 64% of its original size */
+            }
+        }
+   
