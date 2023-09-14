@@ -1,0 +1,43 @@
+/* Page styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #FEFAE0; /* Background color */
+}
+
+/* Clock container styling */
+.clock {
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 50%;
+    position: relative;
+    background-color: #9CCCDB; /* Clock face color */
+}
+
+/* Clock hands styling */
+.hour-hand, .minute-hand {
+    position: absolute;
+    transform-origin: center;
+    background-color: #FEFAE0; /* Clock hand color */
+}
+
+/* Hour hand styling */
+.hour-hand {
+    width: 1.55rem;
+    height: 17.25rem;
+    top: 1.5rem;
+    left: 0.625rem;
+    transform: rotate(90deg); /* Hour hand at 9 o'clock */
+}
+
+/* Minute hand styling */
+.minute-hand {
+    width: 1.55rem;
+    height: 10.125rem;
+    top: 0rem;
+    left: 8.5rem;
+    transform: rotate(0deg); /* Minute hand at 12 o'clock */
+}
