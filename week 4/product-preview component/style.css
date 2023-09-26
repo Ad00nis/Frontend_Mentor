@@ -1,0 +1,136 @@
+/* Import fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* Style for the entire webpage */
+body {
+    font-family: "Fraunces", serif;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Global reset for margins, padding, and box-sizing */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* Global reset for margins, padding, and box-sizing */
+  .card {
+    border-radius: 10px;
+    display: flex;
+    max-width: 666px;
+    background-color: white;
+    margin: 0 1rem;
+  }
+  /* Style for the image container */
+  .img_container {
+    width: 50%;
+  }
+  /* Style for the product image */
+  .img_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  /* Style for the details container */
+  .details_container {
+    width: 50%;
+    padding: 2rem;
+  }
+  /* Style for the product name */
+  .details_container .name {
+    color: hsl(212, 21%, 14%);
+    padding-right: 2rem;
+    margin-bottom: 1.75rem;
+  }
+  /* Style for the product description */
+  .details_container .description {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 22px;
+    margin-bottom: 1.75rem;
+  }
+  /* Style for the Montserrat class */
+  .montserrat {
+    font-family: "Montserrat";
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1.75rem;
+  }
+  /* Style for the price container */
+  .price_container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1.75rem;
+  }
+  /* Style for the current price */
+  .price_container .current_price {
+    color: hsl(158, 36%, 37%);
+  }
+  /* Style for the old price */
+  .price_container .old_price {
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+  }
+  /* Style for the add to cart button */
+  .details_container .btn {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Montserrat";
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  /* Hover effect for the button */
+  .details_container .btn:hover {
+    background-color: hsl(212, 21%, 14%);
+  }
+  /* Media query for screens with a maximum width of 550px */
+  @media only screen and (max-width: 550px) {
+    .card {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .img_container {
+      width: 100%;
+      height: 40%;
+    }
+  
+    .img_container img {
+      content: url("./images/image-product-mobile.jpg");
+    }
+  
+    .card {
+      flex-direction: column;
+    }
+  
+    .details_container {
+      width: 100%;
+    }
+  
+    .details_container .name {
+      padding-right: 0;
+    }
+  
+    .img_container img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0px;
+    }
+  }
