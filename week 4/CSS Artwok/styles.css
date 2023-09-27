@@ -1,0 +1,105 @@
+
+     
+        html {
+            font-size: 16px; 
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8D1C24;
+            height: 100vh;
+            min-width: 100vh;
+            font-size: 1rem; 
+        }
+
+        .background {
+            position: relative;
+            height: 100%;
+        }
+
+        .rectangle {
+            position: absolute;
+            width: 5rem;
+            height: 49rem;
+            background-color: #EC9140;
+        }
+
+        .left {
+            left: 18.75rem; /* 300px in rems */
+            top: 0;
+        }
+
+        .right {
+            right: 18.75rem; /* 300px in rems */
+            top: 0;
+        }
+
+        .endleft {
+            left: 20rem; /* 320px in rems */
+            top: 20rem;
+            height: 5rem;
+            width: 28rem;
+        }
+
+        .endright {
+            right: 20rem; /* 320px in rems */
+            top: 20rem;
+            height: 5rem;
+            width: 28rem;
+        }
+
+        .circle {
+            position: absolute;
+            width: 6.25rem; /* 100px in rems */
+            height: 6.25rem; /* 100px in rems */
+            background-color: #EC9140;
+            border-radius: 50%;
+            left: calc(50% - 3.125rem); /* 50px in rems */
+            top: calc(50% - 3.125rem); /* 50px in rems */
+            top: 20rem;
+            z-index: 1;
+        }
+
+        /* Media queries for responsiveness */
+        @media screen and (max-width: 200px) {
+           body{
+            zoom: 0.2;
+           } 
+            .rectangle, .endleft, .endright {
+    width: 2.375rem; /* 70px in rems */
+    height: 11.875rem; /* 350px in rems */
+}
+
+.left {
+    left: 5.625rem; /* 10px in rems */
+}
+
+.right {
+    right: 5.625rem; /* 10px in rems */
+}
+
+.endleft {
+    left: 5.625rem; /* 10px in rems */
+    top: 5rem;
+    width: 7rem; /* 240px in rems */
+}
+
+.endright {
+    right: 0.625rem; /* 10px in rems */
+    top: 5rem;
+    width: 3rem; /* 240px in rems */
+}
+
+.circle {
+    width: 1.125rem; /* 50px in rems */
+    height: 1.125rem; /* 50px in rems */
+    left: calc(50% - 1.5625rem); /* 25px in rems */
+    top: 5rem; /* Keep the top position the same */
+}
+
+        }
+    
